@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#navbar {
+  background-color: #cfdfdc;
+}
+
+.row1 {
+  /* height: 500px; */
+  padding: 2rem;
+  background-color: #cfdfdc;
+}
+
+#intro {
+  padding: 1rem;
+
+}
+
+#intro button {
+  /* width: 50%; */
+  padding: 1.25rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background-color: #ff5822;
+  color: white;
+}
+
+#intro a {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+}
+
+#loginForm {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+#loginForm input {
+  width: 100%;
+  border-radius: .50rem;
+  border: 1px solid grey;
+  padding: .50rem;
+  margin-bottom: .20rem;
+}
+
+#loginForm input::placeholder {
+  padding-left: 35px;
+}
+
+#loginForm i {
+  /* display: inline-block !important; */
+  position: relative;
+  top: 9%;
+  left: 5%;
+}
+
+#loginForm button {
+  margin-top: 1rem;
+  padding: .65rem;
+  background-color: #ff5822;
+  color: white;
+
+}
+
+
+@media only screen and (max-width:375px) {
+  .navbar-toggler {
+    display: none;
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+
+  .row1 {
+    padding: 6px;
+  }
+
+  #intro {
+    width: 75%;
+    margin: 0rem 0rem 2rem 0rem !important;
+  }
+
+  #intro button {
+    width: 104%;
+    padding: 12px;
+  }
+
+  #intro h1 {
+    font-size: large;
+  }
+
+  #intro a {
+    font-size: small;
+  }
+
+  #loginForm {
+    width: 90%;
+    padding: 2rem;
+    margin: 0rem !important;
+  }
+
+  #loginForm input {
+    margin-bottom: 0rem;
+  }
+
+  #loginForm button {
+    margin-top: 1.75rem !important;
+  }
+}
